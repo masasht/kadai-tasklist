@@ -8,6 +8,8 @@
       </ul>
     </div>
   <% end %>
+  <%= f.label :status, 'スタータス' %>
+  <%= f.select :status, [["実行まえ", "実行まえ"], ["実行中", "実行中"], ["停止中", "停止中"], ["キャンセル", "キャンセル"]] %>
 
   <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
