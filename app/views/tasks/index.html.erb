@@ -13,6 +13,7 @@
     </thead>
     <tbody>
       <% @tasks.each do |task| %>
+        <% user = task.user %>
         <tr>
           <td><%= link_to task.id, task %></td>
           <td class="text-muted"><%= link_to task.status, task %></td>
